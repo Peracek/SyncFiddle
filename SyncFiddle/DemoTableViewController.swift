@@ -36,8 +36,22 @@ class DemoTableViewController: UITableViewController {
                     if error != nil {
                         print("there was an error")
                     }
+                    self.createCoreDataRelationships()
                     self.fetchCurrentObjects()
                 })
+            }
+        }
+    }
+
+    func createCoreDataRelationships() {
+        let request = NSFetchRequest<Skill>(entityName: String(describing: Skill.self))
+        let skills = try! dataStack.mainContext.fetch(request)
+        for skill in skills {
+            if skill.superSkillID != 0 {
+                let superSkill = skills.filter({
+                    return $0.skillID == skill.superSkillID
+                }).first
+                skill.superSkill = superSkill
             }
         }
     }
@@ -60,7 +74,8 @@ class DemoTableViewController: UITableViewController {
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "skillCell", for: indexPath)
-        cell.textLabel?.text = skills[indexPath.row].title
+        let skill = skills[indexPath.row]
+        cell.textLabel?.text = "\(skill.title ?? "N/A") [parent:\(skill.superSkill?.title ?? "N/A")]"
         return cell
     }
 

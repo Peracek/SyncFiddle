@@ -10,7 +10,6 @@
 		4693A3A6A04E93E6087859BF /* Pods_SyncFiddle.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A3A34C3C6FF573432E8C56C /* Pods_SyncFiddle.framework */; };
 		BBA2F3441F82A3B000B2E860 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBA2F3431F82A3B000B2E860 /* AppDelegate.swift */; };
 		BBA2F3491F82A3B000B2E860 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BBA2F3471F82A3B000B2E860 /* Main.storyboard */; };
-		BBA2F34C1F82A3B000B2E860 /* SyncFiddle.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = BBA2F34A1F82A3B000B2E860 /* SyncFiddle.xcdatamodeld */; };
 		BBA2F34E1F82A3B000B2E860 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BBA2F34D1F82A3B000B2E860 /* Assets.xcassets */; };
 		BBA2F3511F82A3B000B2E860 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BBA2F34F1F82A3B000B2E860 /* LaunchScreen.storyboard */; };
 		BBA2F35A1F82A9D800B2E860 /* Demo.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = BBA2F3581F82A9D800B2E860 /* Demo.xcdatamodeld */; };
@@ -25,7 +24,6 @@
 		BBA2F3401F82A3B000B2E860 /* SyncFiddle.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SyncFiddle.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BBA2F3431F82A3B000B2E860 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BBA2F3481F82A3B000B2E860 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		BBA2F34B1F82A3B000B2E860 /* SyncFiddle.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = SyncFiddle.xcdatamodel; sourceTree = "<group>"; };
 		BBA2F34D1F82A3B000B2E860 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BBA2F3501F82A3B000B2E860 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		BBA2F3521F82A3B000B2E860 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -89,7 +87,6 @@
 				BBA2F34D1F82A3B000B2E860 /* Assets.xcassets */,
 				BBA2F34F1F82A3B000B2E860 /* LaunchScreen.storyboard */,
 				BBA2F3521F82A3B000B2E860 /* Info.plist */,
-				BBA2F34A1F82A3B000B2E860 /* SyncFiddle.xcdatamodeld */,
 				BBA2F3581F82A9D800B2E860 /* Demo.xcdatamodeld */,
 				BBA2F35D1F82B12B00B2E860 /* APIRouter.swift */,
 				BBA2F35F1F82BE0100B2E860 /* DemoTableViewController.swift */,
@@ -230,7 +227,6 @@
 			files = (
 				BBA2F3601F82BE0100B2E860 /* DemoTableViewController.swift in Sources */,
 				BBA2F35E1F82B12B00B2E860 /* APIRouter.swift in Sources */,
-				BBA2F34C1F82A3B000B2E860 /* SyncFiddle.xcdatamodeld in Sources */,
 				BBA2F35A1F82A9D800B2E860 /* Demo.xcdatamodeld in Sources */,
 				BBA2F3441F82A3B000B2E860 /* AppDelegate.swift in Sources */,
 			);
@@ -401,16 +397,6 @@
 /* End XCConfigurationList section */
 
 /* Begin XCVersionGroup section */
-		BBA2F34A1F82A3B000B2E860 /* SyncFiddle.xcdatamodeld */ = {
-			isa = XCVersionGroup;
-			children = (
-				BBA2F34B1F82A3B000B2E860 /* SyncFiddle.xcdatamodel */,
-			);
-			currentVersion = BBA2F34B1F82A3B000B2E860 /* SyncFiddle.xcdatamodel */;
-			path = SyncFiddle.xcdatamodeld;
-			sourceTree = "<group>";
-			versionGroupType = wrapper.xcdatamodel;
-		};
 		BBA2F3581F82A9D800B2E860 /* Demo.xcdatamodeld */ = {
 			isa = XCVersionGroup;
 			children = (
